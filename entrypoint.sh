@@ -8,5 +8,5 @@ else
   url="https://app.hatchbox.io/webhooks/deployments/$INPUT_DEPLOY_KEY?latest=true"
 fi
 
-curl --fail $url
+curl --fail POST $url
 echo "Success"
